@@ -1,0 +1,25 @@
+*{
+    text-align: center;   
+   }
+
+   h3{
+       color: darkgreen;
+   }
+
+   #idtitulo{
+       color: rgb(116, 0, 139);
+   }
+
+   .amarrillo{
+       color: rgb(204, 233, 74);
+   }
+
+   img[src*="png"]{
+       height: 20px;
+       width: 10px;
+
+   }
+
+   h6:hover{
+       color: floralwhite;
+   }
