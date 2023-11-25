@@ -1,45 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="../js/calculadoraLog.js"></script>
-</head>
-<body>
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="../js/calculadoraLog.js"></script>
+        <link rel="stylesheet" href="../css/estilosCalculadora.css"></head>
+      <body>
 
-  <nav></nav>
+        <nav></nav>
+        <div class="calculadoraGeneral">
 
-  <section>
-    <label id="idresul" for=""> </label>
-  </section>
-
-  <section>
-    <button id="btn7" onclick="agregarNum(7)">7</button>
-    <button id="btn8" onclick="agregarNum(8)">8</button>
-    <button id="btn9" onclick="agregarNum(9)">9</button>
-  </section>
-  <section>
-    <button id="btn4" onclick="agregarNum(4)">4</button>
-    <button id="btn5" onclick="agregarNum(5)">5</button>
-    <button id="btn6" onclick="agregarNum(6)">6</button>
-  </section>
-  <section>
-    <button id="btn1" onclick="agregarNum(1)">1</button>
-    <button id="btn2" onclick="agregarNum(2)">2</button>
-    <button id="btn3" onclick="agregarNum(3)">3</button>
-  </section>
-  <section>
-    <section>
-      <button id="btn0" onclick="agregarNum(0)">0</button>
-    </section>
-    <button id="btnRestar" onclick="realizarOperacion('-')">-</button>
-    <button id="btnSumar" onclick="realizarOperacion('+')">+</button>
-    <button id="btnMultiplicar" onclick="realizarOperacion('*')">*</button>
-    <button id="btnDividir" onclick="realizarOperacion('/')">/</button>
-    <button id="btnIgual" onclick="realizarOperacion('=')">=</button>
-    <button id="btnIgual" onclick="recetear()">R</button>
-  </section>
-  
-</body>
-</html>
+        <div class="container">
+          <header>
+          <h1>CALCULADORA</h1>
+        </header>
+        <section>
+            <div class="calculadoraNumeros">
+        
+            <button id="btn1" onclick="agregarNum(1)">1</button>
+            <button id="btn2" onclick="agregarNum(2)">2</button>
+            <button id="btn3" onclick="agregarNum(3)">3</button>
+            <button id="btn4" onclick="agregarNum(4)">4</button>
+            <button id="btn5" onclick="agregarNum(5)">5</button>
+            <button id="btn6" onclick="agregarNum(6)">6</button>
+            <button id="btn7" onclick="agregarNum(7)">7</button>
+            <button id="btn8" onclick="agregarNum(8)">8</button>
+            <button id="btn9" onclick="agregarNum(9)">9</button>
+            <button class="col-3" id="btn0" onclick="agregarNum(0)">0</button>
+          </div>
+          <div class="calculadoraOperaciones">
+            <button id="btnRestar" onclick="realizarOperacion('-')">-</button>
+            <button id="btnSumar" onclick="realizarOperacion('+')">+</button>
+            <button id="btnMultiplicar" onclick="realizarOperacion('*')">*</button>
+            <button id="btnDividir" onclick="realizarOperacion('/')">/</button>
+            <button class="col-2" id="btnIgual" onclick="realizarOperacion('=')">=</button>
+            <button class="col-2" id="btnIgual" onclick="recetear()">R</button> 
+            <label id="idresul" for=""> </label>
+          
+          </section>
+          </div>
+          
+      
+      </div>
+    </div>
+        <footer></footer>
+      </body>
+      </html>
