@@ -1,3 +1,9 @@
+// archivo de configuración
+// es donde creo mi aplicación de Vue
+
+
+// vue trabaja con opciones conocida como OPTIONS API
+
 console.log("elementos vue")
 console.log(Vue)
 
@@ -13,6 +19,33 @@ const app = Vue.createApp({
 
     `
     */
+  methods: {
+
+    cambiarMensaje() {
+      console.log("se está cambiando el mensaje")
+      this.mensaje = "Francisco Chanataxi"
+      console.log(this.mensaje)
+    },
+
+    cambiarNumero(){
+      this.valor =+ this.valor +1
+      console.log(this.valor)
+    }
+
+  },
+  watch: {
+
+  },
+  //estructura del data
+  data() {
+    return {
+      mensaje: "hola mundo desde Vue.js",
+      valor: 100
+    }
+  }
+
+
 })
+
 
 app.mount('#myApp')
