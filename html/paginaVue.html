@@ -7,6 +7,7 @@
     <title>Document</title>
     <!-- me perimite importar todos los elementos y componentes de Vue-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="../css/app.css">
 
 </head>
 
@@ -25,6 +26,20 @@
             <p>{{mensaje}}</p>
             <button v-on:click="cambiarNumero()">cambiar numero</button>
             <button v-on:click="cambiarMensaje()">Cambiar mensaje</button>
+            <hr/>
+            <p>{{lista}}</p>
+
+            <label for="idNombre">Nombre:</label>
+            <input v-on:keypress="presionandoTecla " id="idNombre" type="text" v-model="nombre" >
+            <label for="idApellido">Apellido</label>
+            <input v-on:keypress="agregarestu" id="idApellido" type="text" v-model="apellido" >
+            <button v-on:click="agregarEstudiante()" >Agregar</button>
+            {{nombre}}
+            {{apellido}} 
+            <ul>
+                <li v-for="({nombre, apellido} , index ) in lista" >{{index +1}}: {{nombre }}-{{apellido}} 
+                    <button>Editar</button> <button>Eliminar</button> </li>
+            </ul>
         </div>
         <script src="../js/app.js"></script>
     </section>
