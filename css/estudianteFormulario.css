@@ -1,0 +1,65 @@
+body {
+    background-color: #59ABE3;
+}
+
+.container {
+    justify-content: center;
+    display: block;
+    align-items: center;
+
+}
+
+.form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 340px;
+    height: 450px;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    padding: 20px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 0 40px -10px #000;
+}
+
+h2 {
+    margin: 10px 1px;
+    padding-bottom: 10px;
+    width: 180px;
+    color: #78788c;
+    border-bottom: 3px solid #78788c;
+}
+
+/*Para preRemderizad*/
+p:before {
+    content: attr(type);
+    /*se prensenta de tipo bloque*/
+    display: block;
+    margin: 5px 2px;
+    font-size: 16px;
+    color: #5a5a5a;
+    font-style: italic;
+}
+
+input{
+    width: 85%;
+    border: 0;
+    border-bottom: 2px solid #bebed2;
+    /*background-color: #e6e6e6;*/
+    background: none;
+}
+
+input:focus{
+    border: 1px solid #78788c;
+}
+
+button{
+    margin-left: 40%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+h1{
+    align-items: center;
+    text-align: center;
+}
