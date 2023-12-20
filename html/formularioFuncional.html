@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="../css/estudianteFormulario.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Estudiante</h1>
+        </header>
+        <nav></nav>
+        <section>
+            <div id="idFormulario" >
+            <div class="form" >
+                <h2>Nuevo estudiante</h2>
+                <p type="Nombre:"><input id="idNombre" type="text" v-model="nombre"></p>
+                <p type="Apellido:"><input id="idApellido" type="text" v-model="apellido"></p>
+                <p type="Sector:"><input id="idSector" type="text" v-model="sector"></p>
+                <p type="Cédula:"><input id="idCedula" type="text" v-model="cedula"></p>
+                <p type="País:"><input id="idPais" type="text" v-model="pais"></p>
+                <hr/>
+
+
+
+                <button v-on:click="addUsers">Agregar</button>
+
+        
+        </div>
+        <ul>
+            <li v-for="({nombre,apellido,sector,cedula,pais} , index) in lista"> {{index +1}}: {{nombre}}-{{apellido}}-{{sector}}-{{cedula}}-{{pais}} </li>
+        </ul>
+    </div>
+        </section>
+        <script src="../js/ff.js"></script>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
